@@ -40,7 +40,7 @@ print("---------------------------------------------------------------------")
 # Tokenizations
 print("Tokenizations")
 tokenization_words = word_tokenize(text)
-# keywords = [word for word in word_tokenize(text,'english',True)]
+
 print(tokenization_words)
 
 
@@ -48,25 +48,28 @@ print(tokenization_words)
 # Removed punctuation
 punctuation_words = [word for word in tokenization_words if word.isalpha()]
 print(punctuation_words)
+
+# convert to lower case
+normalization = [w.lower() for w in punctuation_words]
 print("---------------------------------------------------------------------")
 
 # -------------------------------------------------------------------------------------
 print("---------------------------------------------------------------------")
 print("Stopwords")
 stop_words = set(stopwords.words('english'))
-result = [word for word in tokenization_words if not word in stop_words]
+result = [word for word in normalization if not word in stop_words]
 print(result)
 print("---------------------------------------------------------------------")
 # -------------------------------------------------------------------------------------
 print("---------------------------------------------------------------------")
 print("POS Tag")
 
-tag = nltk.pos_tag(tokenization_words)
+tag = nltk.pos_tag(result)
 print(tag)
 # -------------------------------------------------------------------------------------
 print("---------------------------------------------------------------------")
 print("Stemming")
 
 porter = PorterStemmer()
-stemmed = [porter.stem(word) for word in tokenization_words]
+stemmed = [porter.stem(word) for word in result]
 print(stemmed)
