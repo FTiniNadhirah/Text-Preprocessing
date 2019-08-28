@@ -7,7 +7,7 @@ import string
 
 #--------------------------------------------------------------------#
 # creating a pdf file object 
-pdfFileObj = open('C:/Users/HP/Dropbox/Sem 8/Masters/Coding/Resources/10.1002@bmc.3721.pdf', 'rb') 
+pdfFileObj = open('combined_example.pdf', 'rb') 
 # creating a pdf reader object 
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj) 
 #  ---------------------------------------------------------------------- 
@@ -25,7 +25,7 @@ print("Page contents")
 
 for i in range(pdfReader.numPages):
       page_to_print = pdfReader.getPage(i)
-      print(page_to_print.extractText())
+      print(page_to_print.extractText().encode('utf8'))
 
 num_pages = pdfReader.numPages
 count = 0
