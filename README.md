@@ -12,7 +12,12 @@
 
 # Softwares & Programming used:
 - Python
-- Anaconda Navigator
+- Anaconda Navigator 1.9.7
+
+# Libraries involved:
+- PyPDF2
+- nltk
+
 # Like it?
 Please click Star to support us.
 
