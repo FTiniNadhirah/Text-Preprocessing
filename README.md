@@ -1,5 +1,14 @@
 # Text mining
 
+# Preprocessing
+- Read and extract data from pdf files.
+- Tokenizations
+- Normalization
+- Stopwords
+- Part of Speech Tag
+- Stemming
+- Lemmatization
+- Save file into text files
 # Like it?
 Please click Star to support us.
 
