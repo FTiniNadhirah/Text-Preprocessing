@@ -9,6 +9,10 @@
 - Stemming
 - Lemmatization
 - Save file into text files
+
+# Softwares & Programming used:
+- Python
+- Anaconda Navigator
 # Like it?
 Please click Star to support us.
 
