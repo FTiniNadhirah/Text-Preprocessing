@@ -1,6 +1,6 @@
 # Text mining
 
-# Preprocessing
+# Preprocessing methods
 - Read and extract data from pdf files.
 - Tokenizations
 - Normalization
